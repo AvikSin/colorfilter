@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Intro p5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+  	border:1px solid black;
+  }
+  </style>
+</head>
+
+<body background="data:image/jpeg;base64,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" style="background-size: cover;">
+<div class="container">
+	<h3 class="btn btn-primary">Introduction to p5.js</h3>
+	<hr>
+  <label>filter color app</label>
+  <input type="text" id="color_label" placeholder="Enter any color">
+  <br><br>
+  <button onclick="filter_tint()" class="btn btn-warning">apply filter</button>
+  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
